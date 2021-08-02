@@ -5,11 +5,15 @@
 }
 
 .jumbotron{
-    /* background-color: var(--green); */
+
+    
     color: var(--bone);
 }
 .site-header{
-    background-image: url("images/frenchquarter.jpeg");
+    background-image: url("../images/swamp.jpg");
+    background-size: cover;
+    background-color: var(--green);
+    background-blend-mode: hard-light;
 }
 .header-text-container{
     padding-top: 50px;
@@ -20,6 +24,9 @@
 }
 .about-container{
     border-radius: 5px;
+}
+.svg-container{
+    max-width: 400px;
 }
 /* .header-card{
     background-color: #920005;
