@@ -9,7 +9,7 @@
     color: var(--bone);
 }
 .site-header{
-    background-image: url("../images/frenchquarter.jpeg");
+    background-image: url("images/frenchquarter.jpeg");
 }
 .header-text-container{
     padding-top: 50px;
