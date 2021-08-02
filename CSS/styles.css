@@ -3,7 +3,9 @@
     --bone: #E7DECA;
     --red: #920005;
 }
-
+body{
+    font-family: 'Lato', sans-serif; 
+}
 .jumbotron{
 
     
@@ -22,11 +24,14 @@
     text-shadow: 5px 3px var(--red);
     font-family: 'Pirata One', cursive;
 }
+.subheader{
+    text-shadow: 2px 2px black;
+}
 .about-container{
     border-radius: 5px;
 }
 .svg-container{
-    max-width: 400px;
+    max-width: 100px;
 }
 /* .header-card{
     background-color: #920005;
