@@ -2,13 +2,22 @@
     --green: #2A3223;
     --bone: #E7DECA;
     --red: #920005;
+    --dark-grey: #1a1a1a;
 }
+
+/* font-family: 'Mirza', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Pirata One', cursive; */
+
 body{
     font-family: 'Lato', sans-serif; 
+    /* background-color: var(--bone); */
+    color: var(--green);
+}
+.navbar{
+    background-color: var(--green);
 }
 .jumbotron{
-
-    
     color: var(--bone);
 }
 .site-header{
@@ -24,14 +33,28 @@ body{
     text-shadow: 5px 3px var(--red);
     font-family: 'Pirata One', cursive;
 }
+.display-4{
+    color: var(--green);
+    font-family: 'Mirza', cursive;
+    padding-top: 0.5em;
+    transition: all 0.5s ease-in-out;
+}
+.display-4:hover{
+    text-shadow: 2px 1px var(--red);
+}
 .subheader{
     text-shadow: 2px 2px black;
 }
-.about-container{
+.about-container, .port-card, .svg-container{
     border-radius: 5px;
+    padding: 5px;
 }
 .svg-container{
     max-width: 100px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
 }
 /* .header-card{
     background-color: #920005;

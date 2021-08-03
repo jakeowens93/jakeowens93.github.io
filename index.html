@@ -9,14 +9,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Pirata+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Mirza&family=Pirata+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 
     </head>
-  <body id="home" data-spy="scroll" data-target=".navbar">
+  <body  data-spy="scroll" data-target="#navbar" data-offset="150" class="scrollspy" tabindex="0">
     <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav id="navbar" class="navbar navbar-expand-md navbar-dark fixed-top">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
         </nav>
     <!-- /Navbar -->
     <!-- Jumbotron-->
-    <div class="site-header px-5 pt-3 jumbotron jumbotron-fluid">
+    <div id="home" class="site-header px-5 py-5 mb-0 jumbotron jumbotron-fluid">
         <div class="container text-sm-center pt5 mt-5 header-text-container">
             <h1 class="display-1 jake-owens">Jake Owens</h1>
             <p class="lead subheader py-3">Front End Web Developer</p>
@@ -51,6 +51,7 @@
     <!-- About -->
     <div id="about" class="container">
         <h3 class="display-4">About</h3>
+        <hr>
         <div class="row justify-content-between">
           <div class="col-sm-5 about-container">
             <h3>Experience</h3>
@@ -59,8 +60,14 @@
           </div>
           <div class="col-sm-5 about-container">
             <h3>Skills</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Sass</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+
+            </ul>
           </div>
           
         </div>
@@ -69,38 +76,58 @@
     <!-- Portfolio -->
 <div id="portfolio" class="container">
     <h3 class="display-4">Portfolio</h3>
+    <hr>
     <div class="row">
-        <div class="col-sm-4">
-            <h3>Employee Directory</h3>
-            <p>Description</p>
+        <div class="card mb-3 col-md-6 col-lg-4">
+            <img class="portfolio-img card-img-top" src="images/portfolio-img/employee-directory.png" alt="Employee Directory">
+            <div class="card-body">
+              <h3 class="card-title">Employee Directory</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        <div class="card mb-3 col-md-6 col-lg-4">
+            <img class="portfolio-img card-img-top" src="images/portfolio-img/webapp.png" alt="Web App Dashboard">
+            <div class="card-body">
+            <h3 class="card-title">WebApp Dashboard</h3>
+            <p class="card-text">Description</p>
+            </div>
         </div>
-        <div class="col-sm-4">
-            <h3>WebApp Dashboard</h3>
-            <p>Description</p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Game Show App</h3>
-            <p>Description</p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Interactive Photo Gallery</h3>
-            <p>Description</p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Web Style Guide</h3>
-            <p>Description</p>
-        </div>
-        <div class="col-sm-4">
-            <h3>Online Registration Form</h3>
-            <p>Description</p>
-        </div>
+        <div class="card mb-3 col-md-6 col-lg-4">
+            <img class="portfolio-img card-img-top" src="images/portfolio-img/gameshow-app.png" alt="Game Show App">
+            <div class="card-body">
+              <h3 class="card-title">Game Show App</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+          <div class="card mb-3  col-md-6 col-lg-4">
+            <img class="portfolio-img card-img-top" src="images/portfolio-img/interactive-photo-gallery.png" alt="Interactive Photo Gallery">
+            <div class="card-body">
+              <h3 class="card-title">Interactive Photo Gallery</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+          <div class="card mb-3 col-md-6 col-lg-4">
+            <img class="portfolio-img card-img-top" src="images/portfolio-img/web-style-guide.png" alt="Web Style Guide">
+            <div class="card-body">
+              <h3 class="card-title">Web Style Guide</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+          <div class="card mb-3 col-md-6 col-lg-4">
+            <img class="portfolio-img card-img-top" src="images/portfolio-img/online-registration-form.png" alt="Online Registration Form">
+            <div class="card-body">
+              <h3 class="card-title">Registration Form</h3>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
     </div>
 </div>
     <!-- /Portfolio -->
     <!-- Social -->
 <div id="contact" class="container justify-content-between">
     <h3 class="display-4">Contact</h3>
-    <div class="row">
+    <hr>
+    <div class="row contact">
         <div class="col svg-container">
             <?xml version="1.0" encoding="UTF-8"?>
             <svg  viewBox="0 0 72 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
