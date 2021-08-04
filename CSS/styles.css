@@ -3,6 +3,7 @@
     --bone: #E7DECA;
     --red: #920005;
     --dark-grey: #1a1a1a;
+    --mustard: #83781B;
 }
 
 /* font-family: 'Mirza', cursive;
@@ -33,6 +34,7 @@ body{
     text-shadow: 5px 3px var(--red);
     font-family: 'Pirata One', cursive;
 }
+
 .display-4{
     color: var(--green);
     font-family: 'Mirza', cursive;
@@ -45,6 +47,7 @@ body{
 .subheader{
     text-shadow: 2px 2px black;
 }
+
 .about-container, .port-card, .svg-container{
     border-radius: 5px;
     padding: 5px;
@@ -56,8 +59,15 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.contact-svg{
+    max-width: 100px;
+    max-height: 100px;
+}
 /* .header-card{
     background-color: #920005;
 }
 
 font-family: 'Lato', sans-serif; */
+
+
+/* col-md-6 col-lg-4 */
