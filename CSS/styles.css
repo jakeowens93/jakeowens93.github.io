@@ -1,7 +1,7 @@
 :root {
     --green: #2A3223;
     --bone: #E7DECA;
-    --red: #920005;
+    --red: #B90006;
     --dark-grey: #1a1a1a;
     --mustard: #83781B;
 }
@@ -14,6 +14,16 @@ body{
     font-family: 'Lato', sans-serif; 
     /* background-color: var(--bone); */
     color: var(--green);
+}
+.body-link{
+    color: var(--green);
+    font-weight: bold;
+}
+.body-link:hover{
+    color: var(--red);
+}
+.body-link:visited{
+    color: var(--mustard);
 }
 .navbar{
     background-color: var(--green);
@@ -33,25 +43,38 @@ body{
 .jake-owens{
     text-shadow: 5px 3px var(--red);
     font-family: 'Pirata One', cursive;
+    cursor:default;
 }
-
+.img-lg{
+    max-width: 350px;
+    max-height: auto;
+}
 .display-4{
     color: var(--green);
     font-family: 'Mirza', cursive;
     padding-top: 0.5em;
-    transition: all 0.5s ease-in-out;
+    cursor:default;
+    transition: all 0.2s ease-in-out;
 }
 .display-4:hover{
     text-shadow: 2px 1px var(--red);
 }
 .subheader{
     text-shadow: 2px 2px black;
+    cursor:default;
 }
 
 .about-container, .port-card, .svg-container{
     border-radius: 5px;
     padding: 5px;
 }
+/* .card{
+    transition: all .2s ease-in-out;
+}
+.card:hover{
+    box-shadow: 0 .5rem 1rem #000;
+} */
+
 .svg-container{
     max-width: 100px;
 }
@@ -62,6 +85,9 @@ body{
 .contact-svg{
     max-width: 100px;
     max-height: 100px;
+}
+.d-sm-none{
+    border-radius: 50%;
 }
 /* .header-card{
     background-color: #920005;
