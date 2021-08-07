@@ -1,9 +1,9 @@
 :root {
-    --green: #2A3223;
+    --green: #3A5521;
     --bone: #E7DECA;
     --red: #B90006;
     --dark-grey: #1a1a1a;
-    --mustard: #83781B;
+    --mustard: #202C39;
 }
 
 /* font-family: 'Mirza', cursive;
@@ -34,7 +34,7 @@ body{
 .site-header{
     background-image: url("../images/swamp.jpg");
     background-size: cover;
-    background-color: var(--green);
+    background-color: #2c3525;
     background-blend-mode: hard-light;
 }
 .header-text-container{
@@ -75,25 +75,33 @@ body{
 
 
 .card{
-    transition: all .2s ease-in-out;
+    transition: all .1s ease-in-out;
 }
 .card:hover{
     box-shadow: 5px 10px 18px rgb(85, 85, 85);
     transform: scale(1.05);
 }
-
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .btn{
-    background-color: var(--red);
+    background-color: var(--mustard);
     color: white;
     width: 100%;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
+    align-self: flex-end;
 }
 .btn:hover{
     color: white;
-    background-color: #850004;
+    background-color: var(--red);
     
 }
-
+.btn-contact{
+    width: 50%;
+    margin: auto;
+}
 .svg-container{
     max-width: 100px;
 }
@@ -102,8 +110,11 @@ body{
     justify-content: space-between;
 }
 .contact-svg{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 50px;
+    max-height: 50px;
+}
+path{
+    fill: var(--mustard);
 }
 .d-sm-none{
     border-radius: 50%;
