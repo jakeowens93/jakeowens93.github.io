@@ -109,10 +109,19 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.contact-link:hover{
+    text-decoration: none;
+}
 .contact-svg{
     max-width: 50px;
     max-height: 50px;
+    transition: all 0.2s ease-in-out;
 }
+.contact-svg:hover{
+    -webkit-filter: drop-shadow( 2px 1px var(--red));
+    filter: drop-shadow( 2px 1px var(--red));
+}
+
 path{
     fill: var(--mustard);
 }
